@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+  /* Primary */
+
+    --blue: hsl(246, 80%, 60%);
+    --work-red: hsl(15,100%,70%);
+    --soft-blue: hsl(195,74%,62%);
+    --study-red: hsl(348, 100%, 68%);
+    --green-exercise: hsl(145, 58%, 55%);
+    --violet-social: hsl(264, 64%, 52%);
+    --orange-self: hsl(43, 84%, 65%);
+ 
+ /* Neutral */
+
+    --very-dark-blue: hsl(226, 43%, 10%);
+    --dark-blue: hsl(235, 46%, 20%);
+    --desat-blue: hsl(235, 45%, 61%);
+    --pale-blue: hsl(236, 100%, 87%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--pale-blue);
+    background-color: var(--very-dark-blue);
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+}
+
+.wrapper {
+    width: 19em;
+    margin: 50px auto;
+}
+
+.profile-card {      
+    height: fit-content;    
+    position: relative;
+    margin-bottom: -5px;
+}
+
+.user-img {
+    width: 70px;
+    height: 70px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.user-report {
+    display: flex;
+    justify-content: center;
+    padding: 10px 25px;    
+    background-color: var(--blue);
+    height: 135px;
+    align-items: center;
+}
+
+.user-report span {    
+    font-size: 0.7em;
+    color: var(--desat-blue);
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+.user-report p {
+    color: var(--pale-blue);
+    font-size: 1.4em;
+    font-weight: 300;
+    padding: 10px 15px 10px;
+}
+
+.time-selection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--dark-blue);
+    height: 95px;
+    z-index: -1;
+    width: 100%;
+    padding: 25px 0px 10px 0px;
+        
+    position: relative;
+    top: -20px;
+}
+
+.time-selection p {
+    color: var(--desat-blue);
+    font-size: 1.1em;
+}
+
+.time-selection > p:nth-child(2) {
+    color: white;
+}
+
+.border-bot-radius {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.border-top-radius {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.border-radius {
+    border-radius: 15px;
+}
+
+.theme-card {
+    height: fit-content;    
+    position: relative;
+    margin-bottom: 15px; 
+}
+
+.icon-box {
+    height: 50px;
+    background-color: var(--work-red);
+    position: relative;
+    z-index: -1;
+    top: 10px;
+    overflow: hidden;        
+}
+
+.logo-card {
+    position: absolute;
+    right: 15px;
+    top: -2.5px;
+}
+
+.data-card {
+    height: 115px; 
+    color: white;
+    background-color: var(--dark-blue);
+    padding: 25px;    
+}
+
+.data-card > * {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-weight: 500;
+}
+
+.card-info {
+    padding: 5px 0px 30px;
+}
+
+.card-info p {
+    font-size: 1.6em;    
+    font-weight: 300;
+    
+}
+
+#span-previous {
+    font-size: 0.9em;
+    color: var(--pale-blue);
+    font-weight: 300;
+}
+
+
+
+
+

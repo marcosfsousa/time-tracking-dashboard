@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrapper">
+  
+    <div class="profile-card">
+      <div class="user-report border-radius">
+        <img class="user-img" src="images/image-jeremy.png" alt="user_avatar">
+        <p><span>Report for</span><br>
+        Jeremy Robson</p>
+      </div>
+      <div class="time-selection border-bot-radius">
+        <p>Daily</p>
+        <p>Weekly</p>
+        <p>Monthly</p>
+      </div>
+    </div>
+  
+    <div class="theme-card">
+      <div class="icon-box border-top-radius">
+        <img class="logo-card" src="images/icon-work.svg" alt="">
+      </div>
+      <div class="data-card border-radius">
+        <p class="card-title">Work
+        <img src="images/icon-ellipsis.svg" alt="">
+        </p>
+        <div class="card-info">
+          <p>32hrs <!-- weekly --></p>
+          <span id="span-previous">Last Week - 36hrs <!-- weekly --></span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="theme-card">
+      <div class="icon-box border-top-radius" style="background-color: var(--soft-blue);">
+        <img class="logo-card" src="images/icon-play.svg" alt="">
+      </div>
+      <div class="data-card border-radius">
+        <p class="card-title">Play
+        <img src="images/icon-ellipsis.svg" alt="">
+        </p>
+        <div class="card-info">
+          <p>10hrs <!-- weekly --></p>
+          <span id="span-previous">Last Week - 8hrs <!-- weekly --></span>
+        </div>        
+      </div>
+    </div>
+
+    <div class="theme-card">
+      <div class="icon-box border-top-radius" style="background-color: var(--study-red);">
+        <img class="logo-card" src="images/icon-study.svg" alt="">
+      </div>
+      <div class="data-card border-radius">
+        <p class="card-title">Study
+        <img src="images/icon-ellipsis.svg" alt="">
+        </p>
+        <div class="card-info">
+          <p>4hrs <!-- weekly --></p>
+          <span id="span-previous">Last Week - 7hrs <!-- weekly --></span>
+        </div>        
+      </div>
+    </div>
+
+    <div class="theme-card">
+      <div class="icon-box border-top-radius" style="background-color: var(--green-exercise);">
+        <img class="logo-card" src="images/icon-exercise.svg" alt="">
+      </div>
+      <div class="data-card border-radius">
+        <p class="card-title">Exercise    
+        <img src="images/icon-ellipsis.svg" alt="">
+        </p>
+        <div class="card-info">
+          <p>4hrs <!-- weekly --></p>
+          <span id="span-previous">Last Week - 5hrs <!-- weekly --></span>
+        </div>        
+      </div>
+    </div>
+
+    <div class="theme-card">
+      <div class="icon-box border-top-radius" style="background-color: var(--violet-social);">
+        <img class="logo-card" src="images/icon-social.svg" alt="">
+      </div>
+      <div class="data-card border-radius">
+        <p class="card-title">Social    
+        <img src="images/icon-ellipsis.svg" alt="">
+        </p>
+        <div class="card-info">
+          <p>5hrs <!-- weekly --></p>
+          <span id="span-previous">Last Week - 10hrs <!-- weekly --></span>
+        </div>        
+      </div>
+    </div>
+
+    <div class="theme-card">
+      <div class="icon-box border-top-radius" style="background-color: var(--orange-self);">
+        <img class="logo-card" src="images/icon-self-care.svg" alt="">
+      </div>
+      <div class="data-card border-radius">
+        <p class="card-title">Self Care    
+        <img src="images/icon-ellipsis.svg" alt="">
+        </p>
+        <div class="card-info">
+          <p>2hrs <!-- weekly --></p>
+          <span id="span-previous">Last Week - 2hrs <!-- weekly --></span>
+        </div>        
+      </div>
+    </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Marcos Sousa</a>.
+  </div>
+</body>
+</html>
