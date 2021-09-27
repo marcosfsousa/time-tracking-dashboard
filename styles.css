@@ -43,7 +43,7 @@ body {
 .profile-card {      
     height: fit-content;    
     position: relative;
-    margin-bottom: -5px;
+    margin-bottom: 15px;
 }
 
 .user-img {
@@ -52,6 +52,8 @@ body {
     border: 3px solid white;
     border-radius: 50%;
 }
+
+
 .user-report {
     display: flex;
     justify-content: center;
@@ -59,6 +61,8 @@ body {
     background-color: var(--blue);
     height: 135px;
     align-items: center;
+    position: relative;
+    top: 20px;
 }
 
 .user-report span {    
@@ -79,23 +83,20 @@ body {
     justify-content: space-around;
     align-items: center;
     background-color: var(--dark-blue);
-    height: 95px;
-    z-index: -1;
+    height: 95px;    
     width: 100%;
     padding: 25px 0px 10px 0px;
-        
-    position: relative;
-    top: -20px;
 }
 
-.time-selection p {
-    color: var(--desat-blue);
-    font-size: 1.1em;
+.time-selection button {
+    color: var(--desat-blue);    
+    font: inherit;
+    font-size: 1.075em;
+    background: none;
+    border: none;
 }
 
-.time-selection > p:nth-child(2) {
-    color: white;
-}
+
 
 .border-bot-radius {
     border-bottom-left-radius: 15px;
@@ -136,13 +137,25 @@ body {
     height: 115px; 
     color: white;
     background-color: var(--dark-blue);
-    padding: 25px;    
+    padding: 25px;
+    z-index: -1;    
 }
 
 .data-card > * {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.icon-ellipsis {
+    position: absolute;
+    right: 28px;
+    top: 85px;
+    z-index: 9999;
+}
+
+.icon-ellipsis:hover {
+    cursor: pointer;    
 }
 
 .card-title {
@@ -170,34 +183,37 @@ body {
         grid-template-columns: 225px repeat(3, 12.5em);
         grid-template-rows: repeat(2, 0.5fr);
         column-gap: 30px;
-        width: 50em;
+        width: 55em;
         margin: 10em auto;        
     }
 
     .profile-card {
         grid-column: 1;
-        grid-row: 1/3;
-        margin-top: 10px;        
+        grid-row: 1/3;               
     }
 
     .user-img {
-        position: absolute;
-        top: 20px;
-        left: 20px;
+        position: relative;
+        top: 0px;
+        left: -50px;
     }
 
     .user-report {
-        height: 17.75em;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 17.075em;
+        top: 10px;                        
     }
+
     .user-report p {
         margin: unset;
-        padding: unset;
-        font-size: 2.3em;
+        padding: unset;        
+        font-size: 2em;
         opacity: 0.9;
     }
 
     .user-report span {
-        font-size: 0.3em;
+        font-size: 0.4em;
         font-weight: 300;
         opacity: 0.8;
     }
@@ -211,6 +227,11 @@ body {
         padding: 40px 30px 25px;
     }
 
+    .time-selection button:hover {
+        color: white;
+        cursor: pointer;
+    }
+
     .theme-card {
         width: 12.5em;
         height: 100%;
@@ -219,6 +240,12 @@ body {
 
     .data-card {
         height: 10em;
+    }
+
+    .data-card:hover {
+        background-color: rgb(62, 68, 149);       
+        transition: 0.5s;
+        cursor: pointer;        
     }
 
     .card-title {
