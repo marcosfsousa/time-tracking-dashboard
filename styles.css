@@ -36,14 +36,13 @@ body {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: minmax(225px, auto);    
-    width: 19em;
+    width: 18.5em;
     margin: 50px auto;
 }
 
 .profile-card {      
     height: fit-content;    
-    position: relative;
-    margin-bottom: 15px;
+    position: relative;    
 }
 
 .user-img {
@@ -65,17 +64,18 @@ body {
     top: 20px;
 }
 
-.user-report span {    
-    font-size: 0.7em;
-    font-weight: 400;
-    padding-bottom: 5px;
+.user-report span {
+    font-size: 0.8em;
+    opacity: 0.7;
+    padding: 10px 15px 5px;
 }
 
 .user-report p {
     color: white;
-    font-size: 1.4em;
+    font-size: 1.3em;
     font-weight: 300;
-    padding: 10px 15px 10px;
+    opacity: 0.8;
+    padding: 1px 15px 10px;
 }
 
 .time-selection {
@@ -94,6 +94,11 @@ body {
     font-size: 1.075em;
     background: none;
     border: none;
+    opacity: 0.8;
+}
+
+#weekly-para {
+    color: white;
 }
 
 
@@ -134,7 +139,7 @@ body {
 }
 
 .data-card {
-    height: 115px; 
+    height: 120px; 
     color: white;
     background-color: var(--dark-blue);
     padding: 25px;
@@ -159,7 +164,7 @@ body {
 }
 
 .card-title {
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .card-info {
@@ -173,7 +178,7 @@ body {
 }
 
 #span-previous {
-    font-size: 0.9em;
+    font-size: 0.85em;
     color: var(--pale-blue);
     font-weight: 300;
 }
@@ -182,7 +187,8 @@ body {
     .wrapper {
         grid-template-columns: 225px repeat(3, 12.5em);
         grid-template-rows: repeat(2, 0.5fr);
-        column-gap: 30px;
+        column-gap: 30px; 
+        row-gap: 15px;       
         width: 55em;
         margin: 10em auto;        
     }
@@ -193,6 +199,8 @@ body {
     }
 
     .user-img {
+        width: 80px;
+        height: 80px;
         position: relative;
         top: 0px;
         left: -50px;
@@ -201,26 +209,28 @@ body {
     .user-report {
         flex-direction: column;
         justify-content: space-around;
-        height: 17.075em;
+        height: 17.675em;
         top: 10px;                        
     }
 
     .user-report p {
         margin: unset;
-        padding: unset;        
+        padding: unset;
         font-size: 2em;
         opacity: 0.9;
+        height: 3.5em;
     }
 
     .user-report span {
-        font-size: 0.4em;
-        font-weight: 300;
-        opacity: 0.8;
+        font-size: 0.8em;
+        font-weight: 400;
+        opacity: 0.7;
+        padding: unset;
     }
 
     .time-selection {
         font-size: 0.9em;
-        height: 10em;
+        height: 10.2em;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
@@ -239,7 +249,7 @@ body {
     }
 
     .data-card {
-        height: 10em;
+        height: 10.2em;
     }
 
     .data-card:hover {
@@ -249,8 +259,7 @@ body {
     }
 
     .card-title {
-        padding-bottom: 20px;
-        opacity: 0.9;
+        padding-bottom: 20px;        
     }
 
     .card-info {
