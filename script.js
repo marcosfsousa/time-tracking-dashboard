@@ -16,7 +16,7 @@ async function requestData() {
         themeCardAll.forEach( element => { // iteration through all theme-cards //
             for (let i = 0; i < data.length; i++) {
                 paraCurrent[i].textContent = data[i].timeframes.daily.current + (data[i].timeframes.daily.current > 1 ? "hrs" : "hr");
-                spanPrevious[i].textContent = "Last Week - " + data[i].timeframes.daily.previous + (data[i].timeframes.daily.previous > 1 ? "hrs" : "hr");
+                spanPrevious[i].textContent = "Yesterday - " + data[i].timeframes.daily.previous + (data[i].timeframes.daily.previous > 1 ? "hrs" : "hr");
             }
         });
     changeActive(dailyBtn, weeklyBtn, monthlyBtn);
@@ -38,7 +38,7 @@ async function requestData() {
         themeCardAll.forEach ( element => { // iteration through all theme-cards //
             for (let i= 0; i < data.length; i++) {
                 paraCurrent[i].textContent = data[i].timeframes.monthly.current + "hrs";
-                spanPrevious[i].textContent = "Last Week - " + data[i].timeframes.monthly.previous + "hrs";    
+                spanPrevious[i].textContent = "Last Month - " + data[i].timeframes.monthly.previous + "hrs";    
             }
         })
     changeActive(monthlyBtn, weeklyBtn, dailyBtn);
