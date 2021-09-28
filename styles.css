@@ -88,7 +88,7 @@ body {
     padding: 25px 0px 10px 0px;
 }
 
-.time-selection button {
+button {
     color: var(--desat-blue);    
     font: inherit;
     font-size: 1.075em;
@@ -96,12 +96,6 @@ body {
     border: none;
     opacity: 0.8;
 }
-
-#weekly-para {
-    color: white;
-}
-
-
 
 .border-bot-radius {
     border-bottom-left-radius: 15px;
@@ -181,6 +175,10 @@ body {
     font-size: 0.85em;
     color: var(--pale-blue);
     font-weight: 300;
+}
+
+.active {
+    color: white;
 }
 
 @media screen and (min-width: 60em) {
