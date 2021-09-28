@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [https://marcosfsousa.github.io/time-tracking-dashboard/](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw/hub/time-tracking-dashboard-app-with-local-json-fetch-api-asyncawait-qeVO1ak5x]
+- Live Site URL: [https://marcosfsousa.github.io/time-tracking-dashboard/]
 
 ## My process
 
