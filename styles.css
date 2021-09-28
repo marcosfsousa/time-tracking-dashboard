@@ -42,7 +42,8 @@ body {
 
 .profile-card {      
     height: fit-content;    
-    position: relative;    
+    position: relative;
+    margin-bottom: 10px;
 }
 
 .user-img {
@@ -193,7 +194,8 @@ button {
 
     .profile-card {
         grid-column: 1;
-        grid-row: 1/3;               
+        grid-row: 1/3;
+        margin: unset;               
     }
 
     .user-img {
