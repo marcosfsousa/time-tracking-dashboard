@@ -28,7 +28,8 @@ Users should be able to:
 ### Screenshot
 
 ![Desktop Preview](./images/desktop_screenshot.png)
-![Mobile Screenshot](./images/mobile_screenshot.png)
+![Mobile Screenshot 1](./images/mobile_screenshot_upper.png)
+![Mobile Screenshot 2](./images/mobile_screenshot_lower.png)
 
 
 ### Links
