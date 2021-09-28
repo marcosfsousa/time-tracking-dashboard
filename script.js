@@ -3,7 +3,7 @@ const weeklyBtn = document.querySelector(".weekly-para");
 const monthlyBtn = document.querySelector(".monthly-para");
 const themeCardAll = document.querySelectorAll('.theme-card');
 let paraCurrent = document.querySelectorAll("p.para-current");
-let spanPrevious = document.querySelectorAll("#span-previous");
+let spanPrevious = document.querySelectorAll(".span-previous");
 
 // request JSON data in async function //
 

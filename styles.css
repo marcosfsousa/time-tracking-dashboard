@@ -25,6 +25,10 @@
     box-sizing: border-box;
 }
 
+h1, h2 {
+    display: none;
+}
+
 body {
     color: var(--pale-blue);
     background-color: var(--very-dark-blue);
@@ -43,7 +47,7 @@ body {
 .profile-card {      
     height: fit-content;    
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .user-img {
@@ -172,7 +176,7 @@ button {
     
 }
 
-#span-previous {
+.span-previous {
     font-size: 0.85em;
     color: var(--pale-blue);
     font-weight: 300;
@@ -273,7 +277,7 @@ button {
         padding-bottom: 10px;
     }
 
-    #span-previous {
+    .span-previous {
         font-size: 0.7em;
     }
 

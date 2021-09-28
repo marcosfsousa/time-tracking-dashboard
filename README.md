@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop Screenshot](./images/desktop_screenshot.png)
+![Desktop Preview](./images/desktop_screenshot.png)
 ![Mobile Screenshot](./images/mobile_screenshot.png)
 
 
@@ -91,7 +91,7 @@ I hope that all of the tools I mentioned above I'll be able to use in future pro
 
 ## Author
 
-- Website - [Marcos Sousa](https://www.your-site.com)
+- Website - [Marcos Sousa](https://marcosfsousa.github.io/WebCV/)
 - Frontend Mentor - [@marcosfsousa](https://www.frontendmentor.io/profile/marcosfsousa)
 - LinkedIn - [omarcossousa](https://www.linkedin.com/in/omarcossousa)
 
