@@ -1,128 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>  
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <main class="wrapper">
-    <h1>Time tracking dashboard</h1>
-    <article class="profile-card">
-      <h2>Profile</h2>  
-      <div class="user-report border-radius">
-        <img class="user-img" src="images/image-jeremy.png" alt="user_avatar">
-        <div>
-          <span>Report for</span>
-          <p>Jeremy Robson</p>
-        </div>
-      </div>
-      <div class="time-selection border-bot-radius">
-        <button class="daily-para" type="button">Daily</button>
-        <button class="weekly-para active" type="button">Weekly</button>
-        <button class="monthly-para" type="button">Monthly</button>        
-      </div>
-    </article>
-    <article class="theme-card">
-      <h2>Work</h2>
-      <div class="icon-box border-top-radius">
-        <img class="logo-card" src="images/icon-work.svg" alt="">
-      </div>
-      <img  class="icon-ellipsis" src="images/icon-ellipsis.svg" alt="">
-      <div class="data-card border-radius">
-        <p class="card-title">Work</p>
-        <div class="card-info">
-          <p class="para-current">32hrs <!-- weekly --></p>
-          <span class="span-previous">Last Week - 36hrs <!-- weekly --></span>
-        </div>
-      </div>
-    </article>
-    <article class="theme-card">
-      <h2>Play</h2>
-      <div class="icon-box border-top-radius" style="background-color: var(--soft-blue);">
-        <img class="logo-card" src="images/icon-play.svg" alt="">
-      </div>
-      <img  class="icon-ellipsis" src="images/icon-ellipsis.svg" alt="">
-      <div class="data-card border-radius">
-        <p class="card-title">Play</p>
-        <div class="card-info">
-          <p class="para-current">10hrs <!-- weekly --></p>
-          <span class="span-previous">Last Week - 8hrs <!-- weekly --></span>
-        </div>        
-      </div>
-    </article>
-    <article class="theme-card">
-      <h2>Study</h2>
-      <div class="icon-box border-top-radius" style="background-color: var(--study-red);">
-        <img class="logo-card" src="images/icon-study.svg" alt="">
-      </div>
-      <img  class="icon-ellipsis" src="images/icon-ellipsis.svg" alt="">
-      <div class="data-card border-radius">
-        <p class="card-title">Study</p>
-        <div class="card-info">
-          <p class="para-current">4hrs <!-- weekly --></p>
-          <span class="span-previous">Last Week - 7hrs <!-- weekly --></span>
-        </div>        
-      </div>
-    </article>
-    <article class="theme-card">
-      <h2>Exercise</h2>
-      <div class="icon-box border-top-radius" style="background-color: var(--green-exercise);">
-        <img class="logo-card" src="images/icon-exercise.svg" alt="">
-      </div>
-      <img  class="icon-ellipsis" src="images/icon-ellipsis.svg" alt="">
-      <div class="data-card border-radius">
-        <p class="card-title">Exercise</p>
-        <div class="card-info">
-          <p class="para-current">4hrs <!-- weekly --></p>
-          <span class="span-previous">Last Week - 5hrs <!-- weekly --></span>
-        </div>        
-      </div>
-    </article>
-    <article class="theme-card">
-      <h2>Social</h2>
-      <div class="icon-box border-top-radius" style="background-color: var(--violet-social);">
-        <img class="logo-card" src="images/icon-social.svg" alt="">
-      </div>
-      <img  class="icon-ellipsis" src="images/icon-ellipsis.svg" alt="">
-      <div class="data-card border-radius">
-        <p class="card-title">Social</p>
-        <div class="card-info">
-          <p class="para-current">5hrs <!-- weekly --></p>
-          <span class="span-previous">Last Week - 10hrs <!-- weekly --></span>
-        </div>        
-      </div>
-    </article>
-    <article class="theme-card">
-      <h2>Selfcare</h2>
-      <div class="icon-box border-top-radius" style="background-color: var(--orange-self);">
-        <img class="logo-card" src="images/icon-self-care.svg" alt="">
-      </div>
-      <img  class="icon-ellipsis" src="images/icon-ellipsis.svg" alt="">
-      <div class="data-card border-radius">
-        <p class="card-title">Self Care</p>        
-        <div class="card-info">
-          <p class="para-current">2hrs <!-- weekly --></p>
-          <span class="span-previous">Last Week - 2hrs <!-- weekly --></span>
-        </div>
-      </div>        
-    </article>
-  </main>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="wrapper">
+      <h1>Time tracking dashboard</h1>
+      <article class="profile-card">
+        <h2>Profile</h2>
+        <div class="user-report border-radius">
+          <img
+            class="user-img"
+            src="images/image-jeremy.png"
+            alt="user_avatar"
+          />
+          <div>
+            <span>Report for</span>
+            <p>Jeremy Robson</p>
+          </div>
+        </div>
+        <div class="time-selection border-bot-radius">
+          <button class="daily-para" type="button">Daily</button>
+          <button class="weekly-para active" type="button">Weekly</button>
+          <button class="monthly-para" type="button">Monthly</button>
+        </div>
+      </article>
+      <article class="theme-card">
+        <h2>Work</h2>
+        <div class="icon-box border-top-radius">
+          <img class="logo-card" src="images/icon-work.svg" alt="" />
+        </div>
+        <img
+          class="icon-ellipsis card-work"
+          src="images/icon-ellipsis.svg"
+          alt=""
+        />
+        <div class="data-card border-radius">
+          <p class="card-title">Work</p>
+          <div class="card-info">
+            <p class="para-current">
+              32hrs
+              <!-- weekly -->
+            </p>
+            <span class="span-previous"
+              >Last Week - 36hrs
+              <!-- weekly --></span
+            >
+          </div>
+        </div>
+        <div class="theme-card-info card-1 border-bot-radius hidden">
+          <ul class="theme-card-list">
+            <li>Rename</li>
+            <li>Save as PDF</li>
+            <li>Delete</li>
+          </ul>
+        </div>
+      </article>
+      <article class="theme-card">
+        <h2>Play</h2>
+        <div
+          class="icon-box border-top-radius"
+          style="background-color: var(--soft-blue)"
+        >
+          <img class="logo-card" src="images/icon-play.svg" alt="" />
+        </div>
+        <img
+          class="icon-ellipsis card-play"
+          src="images/icon-ellipsis.svg"
+          alt=""
+          onclick="console.log('this is play')"
+        />
+        <div class="data-card border-radius">
+          <p class="card-title">Play</p>
+          <div class="card-info">
+            <p class="para-current">
+              10hrs
+              <!-- weekly -->
+            </p>
+            <span class="span-previous"
+              >Last Week - 8hrs
+              <!-- weekly --></span
+            >
+          </div>
+        </div>
+        <div class="theme-card-info card-2 border-bot-radius hidden">
+          <ul class="theme-card-list">
+            <li>Rename</li>
+            <li>Save as PDF</li>
+            <li>Delete</li>
+          </ul>
+        </div>
+      </article>
+      <article class="theme-card">
+        <h2>Study</h2>
+        <div
+          class="icon-box border-top-radius"
+          style="background-color: var(--study-red)"
+        >
+          <img class="logo-card" src="images/icon-study.svg" alt="" />
+        </div>
+        <img
+          class="icon-ellipsis card-study"
+          src="images/icon-ellipsis.svg"
+          alt=""
+        />
+        <div class="data-card border-radius">
+          <p class="card-title">Study</p>
+          <div class="card-info">
+            <p class="para-current">
+              4hrs
+              <!-- weekly -->
+            </p>
+            <span class="span-previous"
+              >Last Week - 7hrs
+              <!-- weekly --></span
+            >
+          </div>
+        </div>
+        <div class="theme-card-info card-3 border-bot-radius hidden">
+          <ul class="theme-card-list">
+            <li>Rename</li>
+            <li>Save as PDF</li>
+            <li>Delete</li>
+          </ul>
+        </div>
+      </article>
+      <article class="theme-card">
+        <h2>Exercise</h2>
+        <div
+          class="icon-box border-top-radius"
+          style="background-color: var(--green-exercise)"
+        >
+          <img class="logo-card" src="images/icon-exercise.svg" alt="" />
+        </div>
+        <img
+          class="icon-ellipsis card-exercise"
+          src="images/icon-ellipsis.svg"
+          alt=""
+        />
+        <div class="data-card border-radius">
+          <p class="card-title">Exercise</p>
+          <div class="card-info">
+            <p class="para-current">
+              4hrs
+              <!-- weekly -->
+            </p>
+            <span class="span-previous"
+              >Last Week - 5hrs
+              <!-- weekly --></span
+            >
+          </div>
+        </div>
+        <div class="theme-card-info card-4 border-bot-radius hidden">
+          <ul class="theme-card-list">
+            <li>Rename</li>
+            <li>Save as PDF</li>
+            <li>Delete</li>
+          </ul>
+        </div>
+      </article>
+      <article class="theme-card">
+        <h2>Social</h2>
+        <div
+          class="icon-box border-top-radius"
+          style="background-color: var(--violet-social)"
+        >
+          <img class="logo-card" src="images/icon-social.svg" alt="" />
+        </div>
+        <img
+          class="icon-ellipsis card-social"
+          src="images/icon-ellipsis.svg"
+          alt=""
+        />
+        <div class="data-card border-radius">
+          <p class="card-title">Social</p>
+          <div class="card-info">
+            <p class="para-current">
+              5hrs
+              <!-- weekly -->
+            </p>
+            <span class="span-previous"
+              >Last Week - 10hrs
+              <!-- weekly --></span
+            >
+          </div>
+        </div>
+        <div class="theme-card-info card-5 border-bot-radius hidden">
+          <ul class="theme-card-list">
+            <li>Rename</li>
+            <li>Save as PDF</li>
+            <li>Delete</li>
+          </ul>
+        </div>
+      </article>
+      <article class="theme-card">
+        <h2>Selfcare</h2>
+        <div
+          class="icon-box border-top-radius"
+          style="background-color: var(--orange-self)"
+        >
+          <img class="logo-card" src="images/icon-self-care.svg" alt="" />
+        </div>
+        <img
+          class="icon-ellipsis card-self-care"
+          src="images/icon-ellipsis.svg"
+          alt=""
+        />
+        <div class="data-card border-radius">
+          <p class="card-title">Self Care</p>
+          <div class="card-info">
+            <p class="para-current">
+              2hrs
+              <!-- weekly -->
+            </p>
+            <span class="span-previous"
+              >Last Week - 2hrs
+              <!-- weekly --></span
+            >
+          </div>
+        </div>
+        <div class="theme-card-info card-6 border-bot-radius hidden">
+          <ul class="theme-card-list">
+            <li>Rename</li>
+            <li>Save as PDF</li>
+            <li>Delete</li>
+          </ul>
+        </div>
+      </article>
+    </main>
 
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Marcos Sousa</a>.
-  </footer>
-<script src="script.js"></script>
-</body>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Marcos Sousa</a>.
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
