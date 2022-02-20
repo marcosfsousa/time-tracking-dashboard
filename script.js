@@ -15,8 +15,6 @@ const ellipsisIconExercise = document.querySelector(".card-exercise");
 const ellipsisIconSocial = document.querySelector(".card-social");
 const ellipsisIconSelfCare = document.querySelector(".card-self-care");
 const dataCard = document.querySelectorAll(".data-card");
-const timeSelection = document.querySelector(".time-selection");
-// const extraCard = document.querySelector(".theme-card-info");
 let paraCurrent = document.querySelectorAll("p.para-current");
 let spanPrevious = document.querySelectorAll(".span-previous");
 
@@ -79,108 +77,123 @@ requestData(); // call function for JSON data parse //
 function changeActive(element, previousActive1, previousActive2) {
   previousActive1.classList.remove("active");
   previousActive2.classList.remove("active");
-  element.class;
-  List.add("active");
+  element.classList.add("active");
 }
 
 // ellipsis img click eventlistener //
 
 function extraInfo() {
-  let closed = true;
+  // variable for each card is needed in order to trigger open and close individually //
+  let closedWork = false;
+  let closedPlay = false;
+  let closedStudy = false;
+  let closedExercise = false;
+  let closedSocial = false;
+  let closedSelfCare = false;
+
   ellipsisIconWork.addEventListener("click", () => {
     // conditional for opening
-    if (closed) {
+    if (!closedWork) {
       cardWork.classList.remove("hidden");
       dataCard[0].classList.remove("border-radius");
       dataCard[0].classList.add("border-top-radius");
-      closed = false;
+      closedWork = true;
       // or closing the extra tab
     } else {
       cardWork.classList.add("hidden");
       dataCard[0].classList.add("border-radius");
       dataCard[0].classList.remove("border-top-radius");
-      timeSelection.classList.remove(".height");
-      closed = true;
+      closedWork = false;
     }
   });
   ellipsisIconPlay.addEventListener("click", () => {
     // conditional for opening
-    if (closed) {
+    if (!closedPlay) {
       cardPlay.classList.remove("hidden");
       dataCard[1].classList.remove("border-radius");
       dataCard[1].classList.add("border-top-radius");
-      closed = false;
+      closedPlay = true;
       // or closing the extra tab
     } else {
       cardPlay.classList.add("hidden");
       dataCard[1].classList.add("border-radius");
       dataCard[1].classList.remove("border-top-radius");
-      closed = true;
+      closedPlay = false;
     }
   });
   ellipsisIconStudy.addEventListener("click", () => {
     // conditional for opening
-    if (closed) {
+    if (!closedStudy) {
       cardStudy.classList.remove("hidden");
       dataCard[2].classList.remove("border-radius");
       dataCard[2].classList.add("border-top-radius");
-      closed = false;
+      closedStudy = true;
       // or closing the extra tab
     } else {
       cardStudy.classList.add("hidden");
       dataCard[2].classList.add("border-radius");
       dataCard[2].classList.remove("border-top-radius");
-      closed = true;
+      closedStudy = false;
     }
   });
   ellipsisIconExercise.addEventListener("click", () => {
     // conditional for opening
-    if (closed) {
+    if (!closedExercise) {
       cardExercise.classList.remove("hidden");
       dataCard[3].classList.remove("border-radius");
       dataCard[3].classList.add("border-top-radius");
-      closed = false;
+      closedExercise = true;
       // or closing the extra tab
     } else {
       cardExercise.classList.add("hidden");
       dataCard[3].classList.add("border-radius");
       dataCard[3].classList.remove("border-top-radius");
-      closed = true;
+      closedExercise = false;
     }
   });
   ellipsisIconSocial.addEventListener("click", () => {
     // conditional for opening
-    if (closed) {
+    if (!closedSocial) {
       cardSocial.classList.remove("hidden");
       dataCard[4].classList.remove("border-radius");
       dataCard[4].classList.add("border-top-radius");
-      closed = false;
+      closedSocial = true;
       // or closing the extra tab
     } else {
       cardSocial.classList.add("hidden");
       dataCard[4].classList.add("border-radius");
       dataCard[4].classList.remove("border-top-radius");
-      closed = true;
+      closedSocial = false;
     }
   });
   ellipsisIconSelfCare.addEventListener("click", () => {
     // conditional for opening
-    if (closed) {
+    if (!closedSelfCare) {
       cardSelfCare.classList.remove("hidden");
       dataCard[5].classList.remove("border-radius");
       dataCard[5].classList.add("border-top-radius");
-      closed = false;
+      closedSelfCare = true;
       // or closing the extra tab
     } else {
       cardSelfCare.classList.add("hidden");
       dataCard[5].classList.add("border-radius");
       dataCard[5].classList.remove("border-top-radius");
-      closed = true;
+      closedSelfCare = false;
     }
   });
 }
 
 extraInfo();
+
+// tests to set time selection window to new heights //
+
+// if (window.innerWidth > 1024) {
+//   if (!closedTop && !closedBottom) {
+//     console.log("this is time to open wide");
+//   } else if (!closedTop) {
+//     console.log("open top");
+//   } else console.log("open bottom");
+// }
 
 // Workflow //
 

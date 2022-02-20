@@ -198,7 +198,9 @@ button {
   padding: 10px 0px;
   color: white;
   list-style-type: none;
-  /* border-top: 1px solid var(--work-red); */
+}
+.theme-card-list li {
+  border-bottom: 2px solid transparent;
 }
 
 .theme-card-list li:hover {
@@ -258,10 +260,24 @@ button {
   .time-selection {
     font-size: 0.9em;
     flex-direction: column;
-    height: 10.2em;
     justify-content: space-between;
     align-items: flex-start;
     padding: 40px 30px 25px;
+  }
+
+  .height {
+    height: 10.2em;
+    transition: ease-in-out 0.5;
+  }
+
+  .one-height {
+    height: 12.2em;
+    transition: ease-in-out 0.5s;
+  }
+
+  .two-height {
+    height: 14.2em;
+    transition: ease-in-out 0.5s;
   }
 
   .time-selection button:hover {
